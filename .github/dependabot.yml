@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    groups:
+      alljava:
+        patterns:
+          - "**/*"
+  - package-ecosystem: "docker"
+    directories:
+      - "/"
+    schedule:
+      interval: "daily"
